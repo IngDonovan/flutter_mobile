@@ -16,7 +16,7 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final tittle_stars = Row(
+    final title_stars = Row(
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(top: 320.0, left: 20.0, right: 20.0),
@@ -31,6 +31,22 @@ class DescriptionPlace extends StatelessWidget {
         )
       ],
     );
-    return tittle_stars;
+
+    final description = Container(
+      margin: EdgeInsets.only(top: 10.0, left: 20.0, right: 20.0),
+      child: Text(
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit auctor, sapien leo praesent etiam iaculis metus ut, consequat lacinia taciti ultrices at tellus integer. Nulla ad conubia donec senectus netus ultrices semper, metus malesuada ridiculus mollis varius himenaeos tellus, potenti habitasse natoque phasellus integer tristique.",
+        style: TextStyle(fontSize: 11.0),
+        textAlign: TextAlign.justify,
+      ),
+    );
+
+    final content = Container(
+      child: Column(
+        children: <Widget>[title_stars, description],
+      ),
+    );
+
+    return content;
   }
 }

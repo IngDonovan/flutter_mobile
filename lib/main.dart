@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Icon(Icons.arrow_back),
+        leading: Icon(Icons.arrow_back),
         title: Text(widget.title),
       ),
       body: new DescriptionPlace(),
